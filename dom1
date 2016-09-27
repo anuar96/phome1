@@ -1,0 +1,3 @@
+ls -l |perl -pl00730012 -e '$/=" ";' > file.txt
+cat "file.txt" | perl -lnaF';' -e '@F = grep defined, @F;if ($F[5] > 1000000){print $F[10] };'
+
